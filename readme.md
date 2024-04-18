@@ -11,10 +11,13 @@ Następnie następuje sprawdzenie czy użytkownik już istnieje w systemie w dan
 Po zalogowaniu użytkownik użytkownik dostaje listę quizów do wyboru, oraz możliwość wylogowania.
 
 ## 3. Quiz:
+### Przebieg quizu
 Po wyborze quizu, użytkownik zostanie poproszony o zaznacznie odpowiedzi na pytanie, a następnie przejdzie do następnego pytania - aż do ich końca w danym quizie.
-
-## 4. Po zakończeniu quizu, użytkownik zostaje znów przekierowany do etapu wyboru (2. Wybór quizu)
+### Zakończnie quizu
+Po zakończeniu quizu, następuje:
+- zapis punktacji,
+- przekierowanie użytkownika do etapu wyboru (2. Wybór quizu).
 
 # Kompilacja i uruchomienie
-opam exec -- dune build
-opam exec -- dune exec Take_It_Caml_Quiz
+- opam exec -- dune build
+- opam exec -- dune exec Take_It_Caml_Quiz
