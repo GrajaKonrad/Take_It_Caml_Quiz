@@ -1,0 +1,1 @@
+module QuizFilesHandler = Quiz_files_handler.Get_quiz_file

@@ -1,4 +1,4 @@
 (executable
  (public_name Take_It_Caml_Quiz)
  (name main)
- (libraries test))
+ (libraries QuizLib))

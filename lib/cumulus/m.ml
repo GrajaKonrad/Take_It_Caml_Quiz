@@ -1,1 +1,0 @@
-let nimbus = "Cumulonimbus (Cb)"
