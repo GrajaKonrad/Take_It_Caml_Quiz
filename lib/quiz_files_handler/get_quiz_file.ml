@@ -1,13 +1,17 @@
 (* get_quiz_file.ml *)
 (* Public: Folder w katalogu pliku wykonywalnego którego ma program szukać *)
-let directory = "/quizes"
+let directory = "/quizes/"
 
 (* Public: Roszerzenie plików z quizami > cqf - caml quiz file *)
 let extension = ".cqf"
 
+(* Public: Zwraca ścieżkę do folderu z quizami *)
+let get_quiz_dir =
+  Sys.getcwd() ^ directory
+
 (* Public: Sprawdza katalog pliku wykonywalnego w poszukiwaniu folderu z quizami i zwraca listę z nazwami tych plików *)
 let get_quiz_list = 
-  Sys.readdir (Sys.getcwd() ^ directory)
+  Sys.readdir get_quiz_dir
   |> Array.to_list
   |> List.filter (fun x -> Filename.extension x = extension)
 

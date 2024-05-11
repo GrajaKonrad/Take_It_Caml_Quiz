@@ -1,11 +1,12 @@
 (* read_quiz_from_file.ml *)
-(* struktura do przechowywania danych pojedyńczego zapytania *)
+(* Public: struktura do przechowywania danych pojedyńczego zapytania *)
 type question = {
   question_text : string;
   correct_answer : string;
   wrong_answers : string list;
 }
 
+(* Public: Wczytuje pytania z pliku pod wzkazaną ścieżką a nastepnie zwraca je w liście z wartościami wpisanymi w strukturze question *)
 let read_questions_from_file filename =
   let file_channel = open_in filename in
   let rec read_questions acc =
@@ -26,8 +27,8 @@ let read_questions_from_file filename =
   in
   read_questions []
 
-let () =
-  let questions = read_questions_from_file "questions.txt" in
+(* Public: Funkcja do wypiswyania pytań w quizie *)
+let print_questions questions =
   List.iter (fun q ->
     Printf.printf "Question: %s\nCorrect answer: %s\nWrong answers: %s\n\n"
       q.question_text q.correct_answer (String.concat ", " q.wrong_answers)
