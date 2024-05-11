@@ -1,5 +1,7 @@
+(* get_quiz_file.ml *)
 (* Public: Folder w katalogu pliku wykonywalnego którego ma program szukać *)
 let directory = "/quizes"
+
 (* Public: Roszerzenie plików z quizami > cqf - caml quiz file *)
 let extension = ".cqf"
 
