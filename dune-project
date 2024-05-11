@@ -11,7 +11,7 @@
 
 (maintainers "Konrad Graja")
 
-(license MTI)
+(license MIT)
 
 (documentation https://github.com/GrajaKonrad/Take_It_Caml_Quiz)
 
