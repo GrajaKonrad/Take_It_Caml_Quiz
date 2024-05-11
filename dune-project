@@ -5,22 +5,21 @@
 (generate_opam_files true)
 
 (source
- (github username/reponame))
+ (github GrajaKonrad/Take_It_Caml_Quiz))
 
-(authors "Author Name")
+(authors "Mikołaj Kmieciak & Konrad Graja")
 
-(maintainers "Maintainer Name")
+(maintainers "Konrad Graja")
 
-(license LICENSE)
+(license MTI)
 
-(documentation https://url/to/documentation)
+(documentation https://github.com/GrajaKonrad/Take_It_Caml_Quiz)
 
 (package
  (name Take_It_Caml_Quiz)
- (synopsis "A short synopsis")
- (description "A longer description")
+ (synopsis "Simple quiz game")
+ (description "Quiz game written in OCaml. It reads questions from a file and asks them to the user. The user can answer the questions and get a score at the end.")
  (depends ocaml dune)
- (tags
-  (topics "to describe" your project)))
+ )
 
 ; See the complete stanza docs at https://dune.readthedocs.io/en/stable/dune-files.html#dune-project
